@@ -7,12 +7,11 @@ import logging
 
 # ToDoの一覧表示機能
 class TodoListView(generic.ListView):
-    # logger = logging.getLogger('development')
-    # logger.info('Hello World!')
+    logger = logging.getLogger('development')
+    logger.error('Hello World!')
+    raise ValueError("Errorが発生しています")
     model = Todo
     paginate_by = 5
-
-
 
 # ToDoの詳細表示機能
 class TodoDetailView(generic.DetailView):

@@ -20,7 +20,7 @@ RUN pip install --requirement /code/requirements.txt
 COPY . /code/
 
 # マイグレート
-RUN python manage.py migrate
+#RUN python manage.py migrate
 
 # シェルファイルへのアクセス権限
 RUN chmod 744 ./startup.sh
