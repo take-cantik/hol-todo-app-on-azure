@@ -16,9 +16,9 @@ services:
     depends_on:
       - db
     environment:
-      - SECRET_KEY="${SECRET_KEY}"
-      - DB_USER=postgres
-      - DB_NAME=postgres
-      - DB_PASSWORD=postgres
-      - DB_HOST=db
-      - DB_PORT=5432
+      SECRET_KEY: "${SECRET_KEY}"
+      DB_USER: "postgres"
+      DB_NAME: "postgres"
+      DB_PASSWORD: "postgres"
+      DB_HOST: "db"
+      DB_PORT: "5432"
